@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger's World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        /* Parallax Effect */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            
+        }
+        html {
+            scroll-behavior: smooth;
+          }
+
+          
+        
+        .relative:hover {
+            box-shadow: 0 0 20px 10px gold; /* Creates the golden shadow */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center w-full h-16 bg-gray-800 text-orange-300 fixed top-0 shadow-lg px-6">
+        <h1 class="text-2xl font-bold hover:text-orange-400 flex items-center gap-2">
+            <i class="fa-solid fa-blog"></i> AB's  World
+        </h1>
+        <div>
+            <h1 class="text-xl text-orange-400 font-semibold hidden hover:text-2xl  md:block">
+                Explore the world <i class="fa-solid fa-globe text-blue-300"></i> </i>
+            </h1>
+        </div>
+        <ul class="hidden md:flex gap-6">
+            <li class="hover:text-xl hover:border hover:p-2 rounded transition duration-300 cursor-pointer hover:text-orange-400 ">
+                <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="hover:text-xl hover:border hover:p-2 rounded transition duration-300 cursor-pointer hover:text-orange-400">
+                <a href="#destination"><i class="fa-solid fa-map-location-dot"></i>
+                </i> Destination</a>
+            </li>
+            <li class="hover:text-xl hover:border hover:p-2 rounded transition duration-300 cursor-pointer hover:text-orange-400">
+                <a href="#blog"><i class="fa-solid fa-envelope"></i> Blog</a>
+            </li>
+            <li class="hover:text-xl hover:border hover:p-2 rounded transition duration-300 cursor-pointer hover:text-blue-400">
+                <a href="signup.html"><i class="fa-solid fa-user"></i> Login</a>
+            </li>
+            <li class="hover:text-xl hover:border hover:p-2 rounded transition duration-300 cursor-pointer hover:text-blue-400">
+                <a href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu Button -->
+        <button id="btn-menu" class="md:hidden text-white">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <section id="home" class="parallax flex justify-center items-center text-center" style="margin-top: 64px;">
+        <video autoplay muted loop class="absolute w-full h-full object-cover">
+            <source src="37088-413229662_small.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="relative bg-white p-10 rounded-4xl w-11/12 sm:w-1/2 lg:w-1/2">
+            <h1 class="text-5xl font-extrabold text-gray-800">Hello <p class="inline text-green-900"> 
+                Explorer's 🌍✈️ </p> 
+                <h2 class="mt-4 text-2xl"> I am <p class="inline text-amber-700 bold">Abdulla</p></h2>
+            </h1>
+            <p class="mt-4 text-lg text-gray-600 font-medium">
+                Join me as I explore the world, uncover hidden gems, and share unforgettable travel stories—one blog at a time! 🌎✨
+            </p>
+            <button class="mt-6 px-6 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-yellow-700 transition duration-300">
+                <a href="#destination">Explore</a>
+            </button>
+        </div>
+    </section>
+    
+    <section id="destination" class="py-24 text-center">
+        <h2 class=" text-5xl font-extrabold mb-10">Destinations 🌍</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 container mx-auto px-8"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 container  mx-auto px-8" >
+            <div class="relative overflow-hidden  hover:scale-105">
+            <img src="paris.jpg " alt="" class="w-full h-64 object-cover rounded-3xl">
+            <div class="text-center m-10 font-bold text-xl">Paris</div>
+
+        </div>
+
+        <div class="relative overflow-hidden  hover:scale-105">
+            <img src="kerla.jpg" alt="" class="w-full h-64 object-cover rounded-3xl">
+            <div class="text-center m-10 font-bold text-xl">Kerla</div>
+        </div>
+        <div class="relative overflow-hidden  hover:scale-105">
+            <img src="mal2.avif" alt="" class="w-full h-64 object-cover rounded-3xl">
+            <div class="text-center m-10 font-bold text-xl">Maldives</div>
+        </div>
+        <div class="relative overflow-hidden  hover:scale-105">
+            <img src="balli.jpg" alt="" class="w-full h-64 object-cover rounded-3xl">
+            <div class="text-center m-10 font-bold text-xl">Balli</div>
+        </div>
+
+        <div class="relative overflow-hidden  hover:scale-105">
+            <img src="goa.jpg" alt="" class="w-full h-64 object-cover rounded-3xl">
+            <div class="text-center m-10 font-bold text-xl">Goa</div>
+        </div>
+        <div class="relative overflow-hidden  hover:scale-105">
+            <img src="kas.png" alt="" class="w-full h-64 object-cover rounded-3xl">
+            <div class="text-center m-10 font-bold text-xl">Kas Hill</div>
+        </div>
+        </div>
+    </section>
+
+<hr>    
+<!-- blog section -->
+     <section id="blog"  class="p-4  text-center mb-10 ">
+        <h1 class="p-4 m-4 text-5xl text-green-700 ">📝Latest Blog Post</h1>
+        <div class="  grid grid-cols-1 md:grid-cols-3  gap-10 container mx-auto-10px  text-center justify-evenly lg:ml-35 md:ml-20">
+            <div class="bg-gray-100 p-6 relative rounded-lg shadow-lg transform hover:-translate-y-2 transition">
+                <img src="kerla.jpg" class="w-50px mb-4 rounded-xl ">
+                <h3 class="text-2xl font-semibold">Kerla-God's Own Country</h3>
+                <p class="text-gray-600 mt-2">Kerala, a southwestern coastal state in India known as "God's Own Country," boasts diverse landscapes, rich culture, and a high literacy rate, making it a popular tourist destination and a progressive state</p>
+                     <button class="bg-blue-700 p-2 mt-2 rounded-xl text-white hover:bg-green-300 hover:text-black">Read more </button>
+            </div>
+            <div class="bg-gray-100 relative p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition">
+                <img src="kas.png" class="w-50px mb-4 rounded-xl ">
+                <h3 class="text-2xl font-semibold">Maharashtra's Valley of Flowers, a vibrant tapestry of nature's beauty</h3>
+                <p class="text-gray-600 mt-2">Kaas Pathar is a plateau made from volcanic rocks in the Satara district of Maharashtra, and comes under the biosphere of the Western Ghats. Hailed as Maharashtra's answer to the Valley of Flowers, Kaas is famous for its overwhelming carpets of flowers which come alive by the fag end of the monsoons.</p>
+                     <button class="bg-blue-700 p-2 mt-2 rounded-xl text-white hover:bg-green-300 hover:text-black">Read more </button>
+            </div>
+            <div class="bg-gray-100 relative p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition">
+                <img src="ajintha.jpg" class="w-50px mb-4 rounded-xl ">
+                <h3 class="text-2xl font-semibold">Ajntha  Verul Len</h3>
+                <p class="text-gray-600 mt-2">Ajanta Caves exemplifies one of the greatest achievements in ancient Buddhist rock-cut architecture. The artistic traditions at Ajanta present an important and rare specimen of art, architecture, painting, and socio-cultural, religious and political history of contemporary society in India.</p>
+                     <button class="bg-blue-700 p-2 mt-2 rounded-xl text-white hover:bg-green-300 hover:text-black">Read more </button>
+            </div>
+
+
+        </div>
+        <hr class="mt-10">
+
+        <h2 class=" text-5xl font-extrabold mb-10 text-center mt-25">Explore 🌍</h2>
+        <section class="flex justify-center items-center mt-10">
+           <iframe src="https://www.google.com/maps/embed?pb
+           =!1m18!1m12!1m3!1d4291.745453141256!2d
+           77.39914006293347!3d28.504393188935435!
+           2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+           !3m3!1m2!1s0x390ce626851f7009%3A0x62118
+           5133cfd1ad1!2sGeeksforGeeks%20%7C%20
+           Coding%20Classes%20%7C%20Noida!5e0!3m2!1
+           sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0" allowfullscreen=""
+               loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+           </iframe>
+        </section>
+     <!-- Footer Section -->
+ <footer class="bg-gray-800 text-white text-center py-10 mt-10 mb-1 ">
+     <div class="container mx-auto px-6">
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+             <!-- About Section -->
+             <div>
+                 <h2 class="text-2xl font-bold">AB's World</h2>
+                 <p class="mt-2 text-gray-300 text-sm">
+                     Explore the world
+                 </p>
+             </div>
+ 
+             <!-- Quick Links -->
+             <div>
+                 <h2 class="text-xl font-semibold">Quick Links</h2>
+                 <ul class="mt-2">
+                     <li class="hover:text-orange-400"><a href="#home">Home</a></li>
+                     <li class="hover:text-orange-400"><a href="#destination">Destination</a></li>
+                     <li class="hover:text-orange-400"><a href="#blog">Blog</a></li>
+                 </ul>
+             </div>
+ 
+             <!-- Social Media -->
+             <div>
+                 <h2 class="text-xl font-semibold">Follow Us</h2>
+                 <div class="flex justify-center mt-3 gap-4">
+                     <a href="#" class="text-xl hover:text-blue-400"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="#" class="text-xl hover:text-sky-400"><i class="fa-brands fa-twitter"></i></a>
+                     <a href="#" class="text-xl hover:text-red-500"><i class="fa-brands fa-youtube"></i></a>
+                     <a href="#" class="text-xl hover:text-pink-500"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#" class="text-xl hover:text-blue-600"><i class="fa-brands fa-linkedin"></i></a>
+                 </div>
+             </div>
+         </div>
+ 
+         <hr class="my-6 border-gray-500">
+ 
+         <p class="text-green-700 text-sm">&copy; 2025 AB's World. All rights reserved.</p>
+     </div>
+ </footer>
+</body>
+</html>
